@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Home -->
+  <url>
+    <loc>https://clawlearnhub.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clawlearnhub.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://clawlearnhub.com/zh"/>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://clawlearnhub.com/zh</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clawlearnhub.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://clawlearnhub.com/zh"/>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Resources -->
+  <url>
+    <loc>https://clawlearnhub.com/resources</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clawlearnhub.com/resources"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://clawlearnhub.com/zh/resources"/>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://clawlearnhub.com/zh/resources</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clawlearnhub.com/resources"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://clawlearnhub.com/zh/resources"/>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 7-Day Tutorial - English -->
+  <url>
+    <loc>https://clawlearnhub.com/day/1</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clawlearnhub.com/day/1"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://clawlearnhub.com/zh/day/1"/>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://clawlearnhub.com/day/2</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clawlearnhub.com/day/2"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://clawlearnhub.com/zh/day/2"/>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://clawlearnhub.com/day/3</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clawlearnhub.com/day/3"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://clawlearnhub.com/zh/day/3"/>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://clawlearnhub.com/day/4</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clawlearnhub.com/day/4"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://clawlearnhub.com/zh/day/4"/>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://clawlearnhub.com/day/5</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clawlearnhub.com/day/5"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://clawlearnhub.com/zh/day/5"/>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://clawlearnhub.com/day/6</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clawlearnhub.com/day/6"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://clawlearnhub.com/zh/day/6"/>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://clawlearnhub.com/day/7</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clawlearnhub.com/day/7"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://clawlearnhub.com/zh/day/7"/>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 7-Day Tutorial - Chinese -->
+  <url>
+    <loc>https://clawlearnhub.com/zh/day/1</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clawlearnhub.com/day/1"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://clawlearnhub.com/zh/day/1"/>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://clawlearnhub.com/zh/day/2</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clawlearnhub.com/day/2"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://clawlearnhub.com/zh/day/2"/>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://clawlearnhub.com/zh/day/3</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clawlearnhub.com/day/3"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://clawlearnhub.com/zh/day/3"/>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://clawlearnhub.com/zh/day/4</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clawlearnhub.com/day/4"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://clawlearnhub.com/zh/day/4"/>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://clawlearnhub.com/zh/day/5</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clawlearnhub.com/day/5"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://clawlearnhub.com/zh/day/5"/>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://clawlearnhub.com/zh/day/6</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clawlearnhub.com/day/6"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://clawlearnhub.com/zh/day/6"/>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://clawlearnhub.com/zh/day/7</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clawlearnhub.com/day/7"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://clawlearnhub.com/zh/day/7"/>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+</urlset>

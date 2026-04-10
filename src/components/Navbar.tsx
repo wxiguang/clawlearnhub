@@ -1,18 +1,26 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import LanguageSwitcher from './LanguageSwitcher';
+import { Dictionary } from '@/lib/i18n';
 
-const links = [
-  { label: '什么是 OpenClaw', href: '#what-is' },
-  { label: '学习路径', href: '#getting-started' },
-  { label: '技能', href: '#skills' },
-  { label: '📚 资源', href: '#resources' },
-  { label: '社区', href: '#community' },
-];
+interface NavbarProps {
+  locale: 'en' | 'zh';
+  dict: Dictionary;
+}
 
-export default function Navbar() {
+export default function Navbar({ locale, dict }: NavbarProps) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+
+  const prefix = locale === 'en' ? '' : `/${locale}`;
+
+  const links = [
+    { label: dict.nav.learn, href: '#what-is' },
+    { label: dict.nav.skills, href: '#skills' },
+    { label: dict.nav.resources, href: '#resources' },
+    // { label: dict.nav.community, href: '#community' },
+  ];
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -25,18 +33,21 @@ export default function Navbar() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
           ? 'backdrop-blur-md border-b border-white/10 py-3'
-          : 'py-5'
+          : 'py-4 sm:py-5'
       }`}
-      style={{ backgroundColor: scrolled ? 'rgba(15, 23, 42, 0.9)' : 'transparent' }}
+      style={{
+        backgroundColor: scrolled ? 'rgba(15, 23, 42, 0.9)' : 'transparent',
+        paddingTop: scrolled ? 'calc(env(safe-area-inset-top) + 0.75rem)' : 'calc(env(safe-area-inset-top) + 1rem)',
+      }}
     >
       <div className="max-w-6xl mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="font-bold text-lg" style={{ color: '#fff' }}>
-          🐾 <span className="gradient-text">OpenClaw</span> 101
+        <a href={prefix || '/'} className="font-bold text-base sm:text-lg whitespace-nowrap" style={{ color: '#fff' }}>
+          🤖 <span className="gradient-text">OpenClaw</span> Learn Hub
         </a>
 
         {/* Desktop links */}
-        <div className="hidden md:flex items-center gap-6">
+        <div className="hidden md:flex items-center gap-4 lg:gap-6">
           {links.map((l) => (
             <a
               key={l.href}
@@ -48,13 +59,24 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="/resources"
+            href={`${prefix}/make-money`}
             className="text-sm transition-colors duration-200 font-medium"
             style={{ color: '#10B981' }}
           >
-            全部资源
+            {locale === 'zh' ? '赚钱' : 'Make Money'}
           </a>
           <a
+            href={`${prefix}/resources`}
+            className="text-sm transition-colors duration-200 font-medium"
+            style={{ color: '#10B981' }}
+          >
+            {locale === 'zh' ? '全部资源' : 'All Resources'}
+          </a>
+          
+          {/* Language Switcher */}
+          <LanguageSwitcher />
+          
+          {/* <a
             href="https://github.com/mengjian-github/openclaw101"
             target="_blank"
             rel="noopener noreferrer"
@@ -62,7 +84,7 @@ export default function Navbar() {
             style={{ color: '#fff' }}
           >
             ⭐ GitHub
-          </a>
+          </a> */}
         </div>
 
         {/* Mobile menu button */}
@@ -70,7 +92,7 @@ export default function Navbar() {
           className="md:hidden hover:text-white transition-colors"
           style={{ color: 'rgba(255,255,255,0.6)' }}
           onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label="Toggle menu"
+          aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
         >
           {mobileOpen ? (
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -99,14 +121,29 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="/resources"
+            href={`${prefix}/make-money`}
             onClick={() => setMobileOpen(false)}
             className="block py-3 transition-colors duration-200 hover:text-white font-medium"
             style={{ color: '#10B981' }}
           >
-            全部资源 →
+            {locale === 'zh' ? '赚钱 →' : 'Make Money →'}
           </a>
+          
           <a
+            href={`${prefix}/resources`}
+            onClick={() => setMobileOpen(false)}
+            className="block py-3 transition-colors duration-200 hover:text-white font-medium"
+            style={{ color: '#10B981' }}
+          >
+            {locale === 'zh' ? '全部资源 →' : 'All Resources →'}
+          </a>
+          
+          {/* Mobile Language Switcher */}
+          <div className="py-3 border-t border-white/10 mt-2">
+            <LanguageSwitcher />
+          </div>
+          
+          {/* <a
             href="https://github.com/mengjian-github/openclaw101"
             target="_blank"
             rel="noopener noreferrer"
@@ -114,7 +151,7 @@ export default function Navbar() {
             style={{ color: 'rgba(255,255,255,0.6)' }}
           >
             ⭐ GitHub
-          </a>
+          </a> */}
         </div>
       )}
     </nav>
